@@ -11,3 +11,8 @@
 (defun smaller ()
   (setf *big* (1- (guess-my-number)))
   (guess-my-number))
+
+(defun start-over ()
+  (defparameter *small* 1)
+  (defparameter *big* 100)
+  (guess-my-number))
